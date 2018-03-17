@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+body, h1, h2, h3, h4, h5, h6, ul, dl, ol, p {
+    margin: 0;
+    padding: 0;
+}
+/* HTML 5 BLOCK */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+li{
+    list-style: none;
+}
+input, button, select, textarea {
+    outline:none;
+    border: none;
+}
+.fl{
+    float: left;
+}

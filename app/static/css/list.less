@@ -1,0 +1,45 @@
+.songList{
+  .songList-nav{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    color: #444444;
+    a{
+      color: #444444;
+      i{
+        position: absolute;
+        top: 0em;
+        left: 0.5em;
+        font-size: 22px;
+      }
+    }
+  }
+  li{
+    display: flex;
+    height: 50px;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    color: #949494;
+    .song-cover{
+      width: 50px;
+      margin: 0em 0.5em;
+      img{
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .song-info{
+      flex:1;
+      margin-left: 0.5em;
+      .song-title{
+        font-size: 20px;
+        font-weight: normal
+      }
+    }
+  }
+  li.active{
+    color: #444444;
+  }
+}

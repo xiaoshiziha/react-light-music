@@ -1,0 +1,94 @@
+.playControl{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  .audio-cover img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .audio-cover img.rotate{
+    animation: rotate 8s linear infinite;
+    -webkit-animation: rotate 8s linear infinite;
+  }
+  .audio-cover img.rotate-pause{
+    animation-play-state: paused;
+  }
+  .audio-cover img.rotate-play{
+    animation-play-state: running;
+  }
+  .audio-title{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .audio-buttons-volume{
+    position: relative;
+  }
+  .audio-volume{
+    width:50%;
+    height: 100px;
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.8;
+  }
+  .audio-volume .audio-progress-box{
+    height: 100%;
+    .audio-progress-core{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0%;
+      background-color: #4a3e3e;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+  .audio-progress-box{
+    height: 6px;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    .audio-progress-core{
+      width: 0%;
+      height: 100%;
+      background-color: #4a3e3e;
+    }
+  }
+  .audio-buttons{
+    margin-top: 20px;
+    ul{
+      display: flex;
+      li{
+        flex: 1;
+        cursor: pointer;
+        i{
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
